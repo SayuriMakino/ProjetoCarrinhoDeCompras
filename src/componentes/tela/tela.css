@@ -1,0 +1,41 @@
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(250px, 1fr));
+  gap: 24px;       
+  padding: 24px;   
+}
+
+.produto-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;           
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.produto-img {
+  width: 100%;
+  height: 250px;    
+  object-fit: cover;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+
+.botao-comprar {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 0.80rem; 
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botao-comprar:hover {
+  background-color: darkorange;
+}
