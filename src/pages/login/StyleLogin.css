@@ -1,0 +1,94 @@
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #18181b;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .login-form-box {
+    width: 100%;
+    background-color: #27272a;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 350px;
+  }
+  
+  .login-form-box h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: white;
+  }
+  
+  .login-input-field,
+  .input-field {
+    position: relative;
+    margin-bottom: 20px;
+    
+  }
+  
+  .login-input-field input,
+  .input-field input {
+    width: 100%;
+    padding: 12px 40px 12px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3f3f46;
+    color: white;
+    margin-bottom: 0.5rem;
+    box-sizing: border-box;
+  }
+  
+  .login-icon,
+  .icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a1a1aa;
+  }
+  
+  .login-recall-forget {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  .login-recall-forget a {
+    color: #fff; 
+    text-decoration: none;
+  }
+
+  .login-recall-forget a:hover{
+    color: #9333ea;
+  }
+  
+  .login-form-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #9333ea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .login-form-box button:hover {
+    background-color: #7e22ce;
+  }
+  
+  .login-signup-link {
+    text-align: center;
+    margin-top: 16px;
+  }
+  
+  .login-signup-link a {
+    color: #9333ea;
+    text-decoration: none;
+  }
+  

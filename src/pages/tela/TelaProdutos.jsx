@@ -1,5 +1,5 @@
 import React from "react";
-import "./tela.css";
+import "./Tela.css";
 
 export default function TelaProdutos({ produtos, adicionarAoCarrinho }) {
   return (

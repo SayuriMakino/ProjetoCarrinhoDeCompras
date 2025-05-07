@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./StyleCarrinho.css";
 
 export default function Carrinho({ fechar, produtosCarrinho, removerProduto }) {
   const total = produtosCarrinho.reduce((sum, p) => sum + p.preco, 0);
