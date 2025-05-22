@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import { FaUser, FaLock } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../../contexts/AuthContext";
 import "./StyleLogin.css";
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
+  const { login } = useAuth();
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    login();
     navigate("/produtos");
   };
 

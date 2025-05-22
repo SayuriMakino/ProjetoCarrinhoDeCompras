@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaUser, FaLock, FaEnvelope } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../../contexts/AuthContext";
 import "./StyleCriarLogin.css";
 
 const CriarLogin = () => {
@@ -8,6 +9,8 @@ const CriarLogin = () => {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [confirmarSenha, setConfirmarSenha] = useState("");
+  const navigate = useNavigate();
+  const { login } = useAuth();
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -18,11 +21,8 @@ const CriarLogin = () => {
     }
 
     console.log({ nome, email, senha });
-  };
 
-  const navigate = useNavigate();
-
-  const entrar = () => {
+    login();
     navigate("/produtos");
   };
 
@@ -80,9 +80,7 @@ const CriarLogin = () => {
             />
           </div>
 
-          <button type="submit" onClick={entrar}>
-            Registrar
-          </button>
+          <button type="submit">Registrar</button>
 
           <div className="signup-link">
             <p>
