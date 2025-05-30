@@ -1,11 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
 body {
   background-color: black;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   min-height: 100vh;
   font-family: "Inter";
 }
@@ -119,7 +117,7 @@ button {
 }
 
 .botao-remover,
-.botao-adicionar {
+.botao-adicionar{
   background-color: transparent;
   color: #a78bfa;
   font-size: 18px;
@@ -218,4 +216,3 @@ span {
   background-color: transparent;
   border: none;
 }
-

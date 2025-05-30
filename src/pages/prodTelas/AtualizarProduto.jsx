@@ -35,7 +35,7 @@ const AtualizarProduto = () => {
             onChange={(e) => setPrice(e.target.value)}
           />
         </div>
-        <button type="submit">Atualizar</button>
+        <button className="botoes-pgProd" type="submit">Atualizar</button>
       </form>
     </div>
   );

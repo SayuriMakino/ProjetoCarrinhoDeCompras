@@ -24,7 +24,9 @@ body {
   padding: 10px 16px;
   border-radius: 8px;
   cursor: pointer;
-  display: flex;
+  display: block; 
+  margin-left: auto; 
+  margin-right: 0; 
   align-items: center;
   gap: 8px;
 }
@@ -37,6 +39,12 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 24px;
+  padding: 24px;
+  justify-items: center; 
+  align-items: center;  
+  width: 100%; 
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 
 .produto-card {
@@ -77,8 +85,37 @@ body {
   width: 100%;
   border-radius: 8px;
   cursor: pointer;
+  margin-top: auto;
+}
+
+.botao-criar{
+  padding: 12px 20px; 
+  display: block;
+  margin: 20px auto; 
+  width: auto; 
 }
 
 .botao-comprar:hover {
   background-color: #7e22ce;
 }
+
+.botao-comprar, .botao-deletar, .botao-atualizar{
+  width: 100%;
+}
+
+button {
+  width: auto; 
+  padding: 10px 20px;
+  background-color: #9333ea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px auto;
+  display: inline-block;
+}
+
+button:hover {
+  background-color: #7e22ce;
+}
+
