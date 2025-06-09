@@ -48,9 +48,9 @@ export async function DeletarProduto(id) {
 
 export async function AtualizarProduto(id, nome, valor, imagem) {
   try {
-    const response = await axios.post(
-      `http://localhost:3000/produtos/atualizar/`,
-      { id, nome, valor, imagem },
+    const response = await axios.put(  
+      `http://localhost:3000/produtos/atualizar/${id}`,  
+      { nome, valor, imagem },
       {
         headers: { "Content-Type": "application/json" },
       }
@@ -59,5 +59,6 @@ export async function AtualizarProduto(id, nome, valor, imagem) {
     return response.data;
   } catch (error) {
     console.error("Erro ao editar produto:", error);
+    throw error; 
   }
 }
